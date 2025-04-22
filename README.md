@@ -14,6 +14,9 @@ This repository contains all the work exercises for the subject "Machine Learnin
 
 - [**🗋 API1.ipynb**](https://github.com/hhvergara/ml_clasificacion_regresion/blob/main/API1.ipynb)
 
+- [**🗋 API2.ipynb**](https://github.com/hhvergara/ml_clasificacion_regresion/blob/main/API2.ipynb)
+
+
 ---
 
 ## 🚀 Setup
