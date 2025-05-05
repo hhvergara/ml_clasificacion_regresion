@@ -4,6 +4,10 @@ appnope==0.1.4 ; sys_platform == 'darwin'
     # via ipykernel
 asttokens==2.4.1
     # via stack-data
+attrs==25.3.0
+    # via
+    #   jsonschema
+    #   referencing
 cffi==1.17.1 ; implementation_name == 'pypy'
     # via pyzmq
 colorama==0.4.6 ; sys_platform == 'win32'
@@ -22,6 +26,8 @@ et-xmlfile==2.0.0
     # via openpyxl
 executing==2.1.0
     # via stack-data
+fastjsonschema==2.21.1
+    # via nbformat
 fonttools==4.54.1
     # via matplotlib
 ipykernel==6.29.5
@@ -30,16 +36,25 @@ ipython==8.29.0
     # via ipykernel
 jedi==0.19.1
     # via ipython
+jinja2==3.1.6
+    # via -r docs/requirements.in
 joblib==1.4.2
     # via scikit-learn
+jsonschema==4.23.0
+    # via nbformat
+jsonschema-specifications==2025.4.1
+    # via jsonschema
 jupyter-client==8.6.3
     # via ipykernel
 jupyter-core==5.7.2
     # via
     #   ipykernel
     #   jupyter-client
+    #   nbformat
 kiwisolver==1.4.7
     # via matplotlib
+markupsafe==3.0.2
+    # via jinja2
 matplotlib==3.9.2
     # via
     #   -r docs/requirements.in
@@ -48,6 +63,10 @@ matplotlib-inline==0.1.7
     # via
     #   ipykernel
     #   ipython
+narwhals==1.37.1
+    # via plotly
+nbformat==5.10.4
+    # via -r docs/requirements.in
 nest-asyncio==1.6.0
     # via ipykernel
 numpy==2.1.2
@@ -65,6 +84,7 @@ packaging==24.1
     # via
     #   ipykernel
     #   matplotlib
+    #   plotly
 pandas==2.2.3
     # via
     #   -r docs/requirements.in
@@ -79,6 +99,8 @@ pip==24.3
     # via -r docs/requirements.in
 platformdirs==4.3.6
     # via jupyter-core
+plotly==6.0.1
+    # via -r docs/requirements.in
 prompt-toolkit==3.0.48
     # via ipython
 psutil==6.1.0
@@ -106,6 +128,14 @@ pyzmq==26.2.0
     # via
     #   ipykernel
     #   jupyter-client
+referencing==0.36.2
+    # via
+    #   jsonschema
+    #   jsonschema-specifications
+rpds-py==0.24.0
+    # via
+    #   jsonschema
+    #   referencing
 scikit-learn==1.5.2
     # via -r docs/requirements.in
 scipy==1.14.1
@@ -132,8 +162,11 @@ traitlets==5.14.3
     #   jupyter-client
     #   jupyter-core
     #   matplotlib-inline
+    #   nbformat
 typing-extensions==4.12.2
-    # via -r docs/requirements.in
+    # via
+    #   -r docs/requirements.in
+    #   referencing
 tzdata==2024.2
     # via pandas
 uv==0.4.27
