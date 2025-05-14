@@ -2,7 +2,7 @@
 #    uv pip compile docs/requirements.in --universal --output-file docs/requirements.txt
 ace-tools==0.0
     # via -r docs/requirements.in
-appnope==0.1.4 ; sys_platform == 'darwin'
+appnope==0.1.4 ; platform_system == 'Darwin'
     # via ipykernel
 asttokens==2.4.1
     # via stack-data
@@ -168,6 +168,7 @@ traitlets==5.14.3
 typing-extensions==4.12.2
     # via
     #   -r docs/requirements.in
+    #   ipython
     #   referencing
 tzdata==2024.2
     # via pandas
