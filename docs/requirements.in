@@ -11,3 +11,4 @@ scikit-learn == 1.5.2
 Jinja2 == 3.1.6
 plotly == 6.0.1
 nbformat >=4.2.0
+ace-tools == 0.0
